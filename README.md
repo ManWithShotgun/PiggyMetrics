@@ -12,8 +12,15 @@ Run on Windows7:
 2. in terminal use `export` for env variables; (or `./run.sh`);
 3. `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up`
 
+Stop all:
 docker stop $(docker ps -a -q)
+Delete all:
 docker rm $(docker ps -a -q)
+
+Hystrix Dashboard:
+http://192.168.99.100:9000/hystrix
+url: http://192.168.99.100:8989
+(need send any requests for loading graphics)
 
 
 # Piggy Metrics
