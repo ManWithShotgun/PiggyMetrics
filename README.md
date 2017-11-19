@@ -3,6 +3,19 @@
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/sqshq/PiggyMetrics/blob/master/LICENCE)
 [![Join the chat at https://gitter.im/sqshq/PiggyMetrics](https://badges.gitter.im/sqshq/PiggyMetrics.svg)](https://gitter.im/sqshq/PiggyMetrics?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+Сейв репо для себя, что бы не потерять.
+Крутой пример microservice архитектуры с использованием spring-boot и деплоя с docker.
+Статья от автора на хабре [Микросервисная архитектура, Spring Cloud и Docker](https://habrahabr.ru/post/280786/)
+
+Run on Windows7:
+1. run Docker Quickstart Terminal;
+2. in terminal use `export` for env variables; (or `./run.sh`);
+3. `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up`
+
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+
 # Piggy Metrics
 
 **A simple way to deal with personal finances**
